@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+/* Formulario.css */
+.formulario-container {
+    max-width: 500px;
+    margin: 20px;
+    background-color: #2d9443;
+    padding: 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+.form_data {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.data_seccion {
+    width: 100%;
+    padding-top: 15px;
+
+}
+
+input, textarea {
+    width: 100%;
+    min-height: 50px;
+    height: max-content;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: green;
+    font-size: 1em;
+    resize: vertical;
+}
+
+textarea{
+    padding-top: 20px;
+}
+
+
+.Button {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    background-color: rgb(62, 202, 93);
+    color: white;
+}
+
+.cont_button {
+    width: 100%;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.label_form {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: green;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.938);
+    border-radius: 5px;
+
+}
+
+.data_seccion {
+    position: relative;
+}
+
