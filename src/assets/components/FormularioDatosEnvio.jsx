@@ -16,7 +16,7 @@ const FormularioDatosEnvio = () => {
     return (
         <div className="formulario-container">
             <div className="aviso">
-                <p>Te informamos que everchic pronto tendra su pagina web. Gracias por su confianza!! 👷‍♂️ 🧡</p>
+                <p className='text_aviso'>Te informamos que everchic pronto tendra su pagina web. para brindarles un mejor servicio! Gracias por su confianza!! 👷‍♂️ 🧡</p>
             </div>
             <div className="logo">                
                 <img className="logo_img" src={servientrega} alt="" />
@@ -76,7 +76,7 @@ const FormularioDatosEnvio = () => {
                 </div>
 
                 <div className="cont_button">
-                <input className="Button" type="submit" value="Enviar" />
+                <input className="Button" type="submit" value="Listo" />
                 </div>
                     
             </form>

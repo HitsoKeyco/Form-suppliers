@@ -3,8 +3,12 @@
 * {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
-    margin: auto 0;
+    margin: 0 auto;
     box-sizing: border-box;
+}
+
+body{
+    background-color: #2d9443;
 }
 
 /* Formulario.css */
@@ -104,4 +108,13 @@ textarea{
     position: absolute;
     right: 0;
     top: 2cqh
+}
+
+.text_aviso{
+    font-size: 0.8em;
+}
+
+.Button:hover{
+    background-color: #1b7a12;
+    cursor: pointer;
 }
