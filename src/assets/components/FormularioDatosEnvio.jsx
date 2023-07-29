@@ -59,7 +59,7 @@ const FormularioDatosEnvio = ( {createRegister} ) => {
                 </div>
                 <div className='data_seccion'>
                     <label className="label_form" htmlFor="email">Celular N°2: </label>
-                    <input type="text" {...register('phone2', { required: true })} />
+                    <input type="text" {...register('phone2', { required: false })} />
                 </div>
                 <div className='data_seccion'>
                     <label className="label_form" htmlFor="email">Email: </label>

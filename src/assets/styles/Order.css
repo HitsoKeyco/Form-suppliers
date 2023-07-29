@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.order_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+
+}
+
+
+.order_form{
+    margin: 25px;
+    width: 100%;
+    max-width: 500px;
+    height: max-content;
+    padding: 20px;
+    background-color: rgb(68, 168, 81);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    color: #fff;
+    
+}
+
+.order_label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: green;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.order_input{    
+    min-height: 50px;
+    height: max-content;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: green;
+    font-size: 1em;
+}
+
+.order_button{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    background-color: rgb(62, 202, 93);
+    color: white;
+}
+
+.order_button_container{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_button:hover{
+    background-color: #1b7a12;
+    cursor: pointer;
+}
