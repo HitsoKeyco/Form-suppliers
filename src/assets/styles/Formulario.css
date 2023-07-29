@@ -40,7 +40,7 @@ h2 {
 
 }
 
-input, textarea {
+textarea {
     width: 100%;
     min-height: 50px;
     height: max-content;
@@ -50,11 +50,24 @@ input, textarea {
     padding-left: 10px;
     color: green;
     font-size: 1em;
-    resize: vertical;
+    
 }
 
 textarea{
     padding-top: 20px;
+    resize: vertical;
+}
+
+input {
+    width: 100%;
+    min-height: 50px;
+    height: max-content;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: green;
+    font-size: 1em;
 }
 
 
