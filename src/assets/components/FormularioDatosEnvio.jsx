@@ -6,13 +6,15 @@ import servientrega from '../img/svg/logo_servientrega.svg';
 
 
 
-const FormularioDatosEnvio = ( {createRegister} ) => {
+
+const FormularioDatosEnvio = ( {createRegister, dataOrder} ) => {
 
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
-
-    const submit = data => {
-        createRegister('/customers',data)
+    
+    const submit = (data) => {
+        createRegister('/customers',data, dataOrder);
+        
         reset({
             first_name: '',
             last_name: '',
@@ -24,10 +26,11 @@ const FormularioDatosEnvio = ( {createRegister} ) => {
             canton: '',
             address: '',
             observation: '',
+            
         })
+
+
     };
-
-
 
     return (
         <div className="formulario-container">
@@ -40,9 +43,9 @@ const FormularioDatosEnvio = ( {createRegister} ) => {
             </div>
 
             <h3>Datos para envios:</h3>
-            <form className="form_data" onSubmit={handleSubmit(submit)}>
 
-                <div className='data_seccion'>
+            <form className="form_data" onSubmit={handleSubmit(submit)}>
+                <div className='data_seccion'>                    
                     <label className="label_form" htmlFor="nombre">Nombres: </label>
                     <input type="text" {...register('first_name', { required: true })} />
                     {errors.nombres && <span>Este campo es requerido</span>}
