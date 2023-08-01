@@ -30,7 +30,17 @@ const useFetch = (baseUrl) => {
                     setInfoApi(true)
                 }
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                Swal.fire({
+                    title: 'Esta orden no existe..!!',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                })
+            }) 
     }
 
     //READ
